@@ -1,4 +1,4 @@
-function calcularIVA(base, tipo = 21) {
+function calcularIVA(base, tipo = 10) {
   return base * (tipo / 100);
 }
 
