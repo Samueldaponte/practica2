@@ -3,6 +3,9 @@ function calcularIVA(base, tipo = 21) {
 }
 
 function precioFinal(base, tipo = 21) {
+  if (base < 0) {
+    throw new RangeError('La base imponible no puede ser negativa');
+  }
   return Number((base + calcularIVA(base, tipo)).toFixed(2));
 }
 
